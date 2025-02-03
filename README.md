@@ -46,6 +46,23 @@ because rewriting merkle logic for every project is tedious and node packages ar
 - Gas-optimized tree construction
 - Works with any address/amount combos
 
+## Test & Get Proofs
+```bash
+# Run the proof generation test with verbose logs
+forge test --match-test testGenerateProofs -vv
+#OR
+forge test -vvv
+
+
+# Example output:
+# MERKLE_ROOT: 0x1234...abcd
+# 
+# PROOFS:
+# Proof for address 0xBbD9...3849f:
+# 0x5678...def1
+# 0x9abc...2345
+```
+
 ## CLI ✨
 ```bash
 # Generate proofs from command line
@@ -104,4 +121,3 @@ Full docs: [book.getfoundry.sh](https://book.getfoundry.sh/)
 
 ---
 
-Made with 🫀 by [Your Name]. Feedback and PRs welcome.
